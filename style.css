@@ -1,0 +1,74 @@
+body{
+    background-image: linear-gradient(turquoise, pink);
+    border: 0.5ch;
+    border-style: dotted dashed solid double;
+    color: darkblue;
+    text-align: center;
+}
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+#text{
+    color: #f48fb1;
+}
+div {
+    border: 5px solid lightblue;
+    padding: 0.01px;
+    margin: 0.01px;
+  }
+h1{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -4px 4px #ef3550,
+                 -8px 8px #f48fb1,
+                 -12px 12px #7e57c2,
+                 -16px 16px #2196f3,
+                 -20px 20px #26c6da,
+                 -24px 24px #43a047,
+                 -28px 28px #eeff41,
+                 -32px 32px #f9a825,
+                 -36px 36px #ff5722;
+}
+#h{
+    color: #f48fb1;
+    text-decoration: wavy underline blueviolet;
+    text-decoration: wavy overline blueviolet;
+}
+p{
+    color: darkblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: #f48fb1;
+    border-top: #ef3550;
+}
+#box1{
+    width: 200px;
+    background-color: darkmagenta;
+    display:inline-block
+}
+#box2{
+    width: 300px;
+    background-color: darkkhaki;
+    display: inline-block;
+
+}
