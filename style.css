@@ -83,6 +83,27 @@ p{
     display: inline-block;
 
 }
+
+#boxcheck{
+    width: 700px;
+    background-color: lightyellow;
+    display: inline-block;
+}
+#boxcheckblue{
+    width: 700px;
+    background-color: lightblue;
+    display: inline-block;
+}
+#boxcheckpink{
+    width: 700px;
+    background-color: rgb(243, 170, 215);
+    display: inline-block;
+}
+#boxcheckgreen{
+    width: 700px;
+    background-color: lightgreen;
+    display: inline-block;
+}
 img {
     height: 200px;
     width: 150px;
