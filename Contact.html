@@ -2,32 +2,42 @@
     <head>
         <link rel='stylesheet' href='style.css'/>
     </head>
+    <script type = "text/javascript">
+        function onPressed(){
+        alert('Yay!');
+        }
+        function onCall(){
+        alert('Please no prank calls!');
+        }
+    </script>
     <body>
         <H1>Contact Details</H1>
-        <div id="boxcheckgreen"><p>Please leave your details below and I will contact you
+        <div id="boxcheckpink"><p>Please fill in your contact details below to send an email of your feedback on my website.
             <br>You will also find my contact information below, please feel
             free to reach out if you have any questions.
         </p></div>
-        <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
-            <div>
-              <label for="name">Name:
-                <input type="text" name="name" id="name" />
-              </label>
-            </div>
-            <div>
-              <label for="email">Email:
-                <input type="text" name="email" id="email" />
-              </label>
-            </div>
-            <div>
-              <label>Comments:</label>
-              <br />
-              <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
-            </div>
-            <div>
-              <input type="submit" name="submit" value="Send" />
-              <input type="reset" name="reset" value="Clear Form" />
-            </div>
-          </form>
+          <form action="mailto:liatshear@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm">
+            Name of grader:<br>
+            <input type="text" size="19" name="Contact-Name"><br><br>
+            Email:<br>
+            <input type="email" name="Contact-Email"><br><br> 
+            Feedback on my hw6 website:<br> 
+            <textarea name="Contact-Message" rows="6″ cols="20″>
+            </textarea><br><br> 
+            <button type="submit" value="Submit">Send</button>
+            </form>  
+            <form action="/play">
+            <input onclick='onPressed()' type=button name="mybutton" value="Give this assignment 100%">
+            </form>
+            <p>Email: liatshear@gmail.com
+                <br>Cell: +972587822826
+                <form action="/play">
+                    <input onclick='onCall()' type=button name="mybutton" value="Call now">
+                </form>
+            </p>
+     
         </body>
-</html>
+    </html>
