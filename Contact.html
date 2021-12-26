@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel='stylesheet' href='style.css'/>
+        <script type='text/javascript' src='java.js'></script>
     </head>
     <script type = "text/javascript">
         function onPressed(){
@@ -16,7 +17,7 @@
             <br>You will also find my contact information below, please feel
             free to reach out if you have any questions.
         </p></div>
-          <form action="mailto:liatshear@gmail.com"
+          <form action="mailto:liatshear@gmail.com?subject=Hello Liat!&body=Your%20Homework6%20Feedback:"
             method="POST"
             enctype="multipart/form-data"
             name="EmailForm">
@@ -27,7 +28,7 @@
             Feedback on my hw6 website:<br> 
             <textarea name="Contact-Message" rows="6″ cols="20″>
             </textarea><br><br> 
-            <button type="submit" value="Submit">Send</button>
+            <button type="submit" onsubmit="return validateForm()" value="Submit">Send</button>
             </form>  
             <form action="/play">
             <input onclick='onPressed()' type=button name="mybutton" value="Give this assignment 100%">
@@ -38,6 +39,9 @@
                     <input onclick='onCall()' type=button name="mybutton" value="Call now">
                 </form>
             </p>
+            <div class="container">
+                    
+            </div>
      
         </body>
     </html>
