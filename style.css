@@ -1,29 +1,81 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 body{
-    background-image: linear-gradient(rgb(220, 207, 223), rgb(248, 217, 235));
+   
+    background-image: linear-gradient(rgb(224, 144, 241), rgb(32, 169, 179));
     border: 0.5ch;
     border-style: dotted dashed solid double;
+
     font-family: 'Anonymous Pro', monospace;
-    color: darkorchid;
+    color: rgb(107, 37, 145);
     text-align: center;
+}
+/* Add a black background color to the top navigation */
+.toolbar {
+  background-color: rgb(248, 248, 101);
+  overflow: hidden;
+}
+#main{
+  color: rgb(92, 24, 92);
+}
+
+/* Style the links inside the navigation bar */
+.toolbar a {
+  float: left;
+  color: rgb(224, 125, 224);
+  text-align: center;
+  padding: 13px 15px;
+  text-decoration:rgb(163, 71, 163);
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.toolbar a:hover {
+  background-color: rgb(160, 224, 205);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.toolbar a.active {
+  background-color: lightcoral;
+  color: white;
 }
 #text1{
     background-color: lightblue;
 }
 a {
-    color: darkorchid;
+    position: relative;
+}
+a:hover {
+    top: -2px;
+}
+a {
+    color: darkmagenta;
     padding: 1em 1.5em;
     text-decoration: none;
   }
-.typewriter{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+  #dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  #hobbies{
+      font-size: 1.2rem;
+      color: rgb(9, 61, 61);
+  }
+  
+#typewriter{
+    overflow: hidden;
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
+      text-decoration: wavy underline rgb(58, 14, 99);
+      text-decoration: wavy overline rgb(70, 43, 226);
 }
 @keyframes typing {
     from { width: 0 }
@@ -33,11 +85,22 @@ a {
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+  #rainbow{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 3rem;
+    background: linear-gradient(to right, #ef5350, #f48fb1, darkorchid, rgb(42, 19, 172),
+    lightblue, green, yellow, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
 #text{
-    color: darkorchid;
+    color: rgb(59, 16, 80);
 }
 div {
-    border: 5px solid darkorchid;
+    border: 5px solid rgb(48, 7, 68);
     padding: 0.01px;
     margin: 0.01px;
   }
@@ -60,6 +123,11 @@ p{
     font-family:'Anonymous Pro', monospace;
     border-bottom: #f48fb1;
     border-top: #ef3550;
+}
+#boxinfo{
+  width: 500px;
+  background-color: rgb(136, 137, 197);
+  display:inline-block
 }
 #box1{
     width: 250px;
@@ -86,7 +154,7 @@ p{
 
 #boxcheck{
     width: 700px;
-    background-color: lightyellow;
+    background-color: rgb(163, 214, 210);
     display: inline-block;
 }
 #boxcheckblue{
@@ -108,11 +176,27 @@ img {
     height: 200px;
     width: 150px;
   }
+  #long{
+    height: 200px;
+    width: 1000px;
+  }
   #icon{
-    height: 10px;
-    width: 10px;
+    height: 20px;
+    width: 20px;
+  }
+  #iconi{
+    height: 25px;
+    width: 25px;
   }
   #self{
     height: 80px;
     width: 80px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 50px;
   }

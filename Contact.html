@@ -3,15 +3,15 @@
         <link rel='stylesheet' href='style.css'/>
         <script type='text/javascript' src='java.js'></script>
     </head>
-    <script type = "text/javascript">
-        function onPressed(){
-        alert('Yay!');
-        }
-        function onCall(){
-        alert('Please no prank calls!');
-        }
-    </script>
     <body>
+        <div class="toolbar">
+            <a class="active" href="file:///C:/Users/liats/hw6/liat.shear-hw6/web.html">Home</a>
+            <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Socials.html">Social Media</a>
+          </div>
+        <div class="topnav">
+            <a class="active" href="file:///C:/Users/liats/hw6/liat.shear-hw6/web.html">Home</a>
+            <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Socials.html">Social Media</a>
+          </div>
         <H1>Contact Details</H1>
         <div id="boxcheckpink"><p>Please fill in your contact details below to send an email of your feedback on my website.
             <br>You will also find my contact information below, please feel
@@ -28,7 +28,7 @@
             Feedback on my hw6 website:<br> 
             <textarea name="Contact-Message" placeholder="write message here" rows="6″ cols="20″>
             </textarea><br><br> 
-            <button type="submit" onsubmit="return validateForm()" onsubmit="return validateEmail()" value="Submit">Send</button>
+            <button type="submit" onsubmit="return validateForm()" value="Submit">Send</button>
             </form>  
             <form action="/play">
             <input onclick='onPressed()' type=button name="mybutton" value="Give this assignment 100%">
