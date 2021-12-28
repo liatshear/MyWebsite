@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 body{
-   
     background-image: linear-gradient(rgb(224, 144, 241), rgb(32, 169, 179));
     border: 0.5ch;
     border-style: dotted dashed solid double;
@@ -9,7 +8,11 @@ body{
     color: rgb(107, 37, 145);
     text-align: center;
 }
-/* Add a black background color to the top navigation */
+#welcome{
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s; 
+}
 .toolbar {
   background-color: rgb(248, 248, 101);
   overflow: hidden;
@@ -62,7 +65,10 @@ a {
   }
   #hobbies{
       font-size: 1.2rem;
-      color: rgb(9, 61, 61);
+      color: rgb(99, 19, 116);
+  }
+  #mid{
+    text-align: center;
   }
   
 #typewriter{
@@ -151,6 +157,13 @@ p{
     display: inline-block;
 
 }
+#boxt{
+  width: 90px;
+  height:90px;
+  background-color: lightgreen;
+  display: inline-block;
+
+}
 
 #boxcheck{
     width: 700px;
@@ -176,10 +189,6 @@ img {
     height: 200px;
     width: 150px;
   }
-  #long{
-    height: 200px;
-    width: 1000px;
-  }
   #icon{
     height: 20px;
     width: 20px;
@@ -191,6 +200,7 @@ img {
   #self{
     height: 80px;
     width: 80px;
+
   }
   form {
     display: flex;

@@ -5,19 +5,19 @@
     </head>
     <body>
         <div class="toolbar">
-            <a class="active" href="file:///C:/Users/liats/hw6/liat.shear-hw6/web.html">Home</a>
+            <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/web.html">Home</a>
+            <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Education.html">Education</a>
             <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Socials.html">Social Media</a>
-          </div>
-        <div class="topnav">
-            <a class="active" href="file:///C:/Users/liats/hw6/liat.shear-hw6/web.html">Home</a>
-            <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Socials.html">Social Media</a>
+            <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Employment.html">Employment</a>
+            <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Hobbies.html">Hobbies</a>
+            <a class="active" href="file:///C:/Users/liats/hw6/liat.shear-hw6/Contact.html">Contact ME</a>
           </div>
         <H1>Contact Details</H1>
         <div id="boxcheckpink"><p>Please fill in your contact details below to send an email of your feedback on my website.
             <br>You will also find my contact information below, please feel
             free to reach out if you have any questions.
         </p></div>
-          <form action="mailto:liatshear@gmail.com?subject=Hello Liat!&body=Your%20Homework6%20Feedback:"
+          <form id="mid" action="mailto:liatshear@gmail.com?subject=Hello Liat!&body=Your%20Homework6%20Feedback:"
             method="POST"
             enctype="multipart/form-data"
             name="EmailForm">
@@ -26,7 +26,7 @@
             Email:<br>
             <input type="email" placeholder="grader@idc.com" name="Contact-Email"><br><br> 
             Feedback on my hw6 website:<br> 
-            <textarea name="Contact-Message" placeholder="write message here" rows="6″ cols="20″>
+            <textarea name="Contact-Message" placeholder="write message here" rows="7″ cols="18″>
             </textarea><br><br> 
             <button type="submit" onsubmit="return validateForm()" value="Submit">Send</button>
             </form>  
