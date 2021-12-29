@@ -4,7 +4,7 @@ body{
     border: 0.5ch;
     border-style: dotted dashed solid double;
 
-    font-family: 'Anonymous Pro', monospace;
+    font: fantasy;
     color: rgb(107, 37, 145);
     text-align: center;
 }
@@ -14,7 +14,7 @@ body{
   -webkit-transition: opacity 2s; 
 }
 .toolbar {
-  background-color: rgb(248, 248, 101);
+  background-color: rgb(243, 243, 131);
   overflow: hidden;
 }
 #main{
@@ -67,9 +67,9 @@ a {
       font-size: 1.2rem;
       color: rgb(99, 19, 116);
   }
-  #mid{
-    text-align: center;
-  }
+#mid{
+  text-align: center;
+}
   
 #typewriter{
     overflow: hidden;
@@ -106,7 +106,7 @@ a {
     color: rgb(59, 16, 80);
 }
 div {
-    border: 5px solid rgb(48, 7, 68);
+    border: 5px solid rgb(184, 39, 128);
     padding: 0.01px;
     margin: 0.01px;
   }
@@ -129,11 +129,6 @@ p{
     font-family:'Anonymous Pro', monospace;
     border-bottom: #f48fb1;
     border-top: #ef3550;
-}
-#boxinfo{
-  width: 500px;
-  background-color: rgb(136, 137, 197);
-  display:inline-block
 }
 #box1{
     width: 250px;
@@ -196,6 +191,16 @@ img {
   #iconi{
     height: 25px;
     width: 25px;
+  }
+  #boxinfo{
+    width: 250px;
+    background-color: rgb(174, 175, 223);
+    display:inline-block;
+    height: 250px;
+  }
+  #avatar{
+    height:250px;
+    width: 220px;
   }
   #self{
     height: 80px;
