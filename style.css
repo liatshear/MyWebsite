@@ -36,7 +36,20 @@ body{
   background-color: rgb(160, 224, 205);
   color: black;
 }
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(231, 114, 221);
+  height:250px;
+  width: 220px;
 
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Add a color to the active/current link */
 .toolbar a.active {
   background-color: lightcoral;
@@ -77,6 +90,7 @@ a {
     white-space: nowrap; 
     margin: 0 auto; 
     letter-spacing: .15em; 
+    text-decoration: wavy overline rgb(58, 14, 99);
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -106,10 +120,13 @@ a {
     color: rgb(59, 16, 80);
 }
 div {
-    border: 5px solid rgb(184, 39, 128);
+    border: 5px solid rgb(235, 154, 204);
     padding: 0.01px;
     margin: 0.01px;
   }
+#wrap{
+  align-items:stretch;
+}
 h1{
   margin-top: 0px;
   margin-bottom: 10px;
@@ -171,9 +188,10 @@ p{
     display: inline-block;
 }
 #boxcheckpink{
-    width: 700px;
+    width: 600px;
     background-color: rgb(243, 170, 215);
     display: inline-block;
+    font: fantasy;
 }
 #boxcheckgreen{
     width: 700px;
@@ -196,11 +214,16 @@ img {
     width: 250px;
     background-color: rgb(174, 175, 223);
     display:inline-block;
-    height: 250px;
+    height: 160px;
   }
   #avatar{
     height:250px;
     width: 220px;
+  }
+  #boxsize{
+    height:250px;
+    width: 220px;
+    background-color: aquamarine;
   }
   #self{
     height: 80px;

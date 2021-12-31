@@ -10,38 +10,41 @@
             <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Socials.html">Social Media</a>
             <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Employment.html">Employment</a>
             <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Hobbies.html">Hobbies</a>
-            <a class="active" href="file:///C:/Users/liats/hw6/liat.shear-hw6/Contact.html">Contact ME</a>
+            <a class="active" href="file:///C:/Users/liats/hw6/liat.shear-hw6/Contact.html">Contact Me</a>
           </div>
         <H1>Contact Details</H1>
+        <div>
         <div id="boxcheckpink"><p>Please fill in your contact details below to send an email of your feedback on my website.
             <br>You will also find my contact information below, please feel
             free to reach out if you have any questions.
-        </p></div>
-          <form id="mid" action="mailto:liatshear@gmail.com?subject=Hello Liat!&body=Your%20Homework6%20Feedback:"
+        </p>
+          <p id="mid"><form action="mailto:liatshear@gmail.com?subject=Hello Liat!&body=Your%20Homework6%20Feedback:"
             method="POST"
             enctype="multipart/form-data"
             name="EmailForm">
-            Name of grader:<br>
-            <input type="text" placeholder="your name" size="19" name="Contact-Name"><br><br>
-            Email:<br>
-            <input type="email" placeholder="grader@idc.com" name="Contact-Email"><br><br> 
-            Feedback on my hw6 website:<br> 
+            Name of grader:
+            <input type="text" onclick="return IsEmpty();" placeholder="your name" size="19" name="Contact-Name">
+            Email:
+            <input type="email" placeholder="grader@idc.com" name="Contact-Email">
+            Feedback on my hw6 website:
             <textarea name="Contact-Message" placeholder="write message here" rows="7″ cols="18″>
-            </textarea><br><br> 
-            <button type="submit" onsubmit="return validateForm()" value="Submit">Send</button>
+            </textarea>
+            <button type="submit" onclick="return IsEmpty();" value="Submit">Send</button>
             </form>  
             <form action="/play">
             <input onclick='onPressed()' type=button name="mybutton" value="Give this assignment 100%">
-            </form>
+            </form></p>
             <p>Email: liatshear@gmail.com
                 <br>Cell: +972587822826
                 <form action="/play">
                     <input onclick='onCall()' type=button name="mybutton" value="Call now">
                 </form>
             </p>
-            <div class="container">
-                    
-            </div>
+              <form name="frm">
+                Any extra questions:<input name="question"/><br/>
+            <input id="insert" onclick="return IsEmpty();" type="submit" value="Add Question" />
+         </form>
+        </div>
      
         </body>
     </html>

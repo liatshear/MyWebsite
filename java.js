@@ -1,26 +1,19 @@
-/* text effects*/
+var i = 0;
+var txt = 'Welcome to my website'; 
+var speed = 50;
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
+    document.getElementById("welcome").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
 }
 function validateForm() {
     let x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
+    if (x == "x") {
       alert("Name must be filled out");
       return false;
     }
-}
-function ValidateEmail(mail) 
-{
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
-  {
-    return (true)
-  }
-    alert("You have entered an invalid email address!")
-    return (false)
 }
 function onPressed(){
   alert('Yay!');
@@ -28,3 +21,14 @@ function onPressed(){
   function onCall(){
   alert('Please no prank calls!');
   }
+  const submit = document.getElementById("submit");
+
+submit.addEventListener("click", validate);
+
+function IsEmpty() {
+  if (document.forms['frm'].question.value === "") {
+    alert("empty");
+    return false;
+  }
+  return true;
+}
