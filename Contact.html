@@ -4,6 +4,7 @@
         <script type='text/javascript' src='java.js'></script>
     </head>
     <body>
+         <!--create the toolbar at the top of the page for navigation purposes-->
         <div class="toolbar">
             <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/web.html">Home</a>
             <a href="file:///C:/Users/liats/hw6/liat.shear-hw6/Education.html">Education</a>
@@ -14,24 +15,30 @@
           </div>
         <H1>Contact Details</H1>
         <div>
+             <!--instructions for form below-->
         <div id="boxcheckpink"><p>Please fill in your contact details below to send an email of your feedback on my website.
             <br>You will also find my contact information below, please feel
             free to reach out if you have any questions.
         </p>
-          <p id="mid"><form action="mailto:liatshear@gmail.com?subject=Hello Liat!&body=Your%20Homework6%20Feedback:"
+         <!--create the form to take the user to email me if they choose-->
+          <p id="mid"><form name ="frm" action="mailto:liatshear@gmail.com?subject=Hello Liat!&body=Your%20Homework6%20Feedback:"
             method="POST"
             enctype="multipart/form-data"
             name="EmailForm">
             Name of grader:
-            <input type="text" onclick="return IsEmpty();" placeholder="your name" size="19" name="Contact-Name">
+             <!--first input is a username, must be filled in and not contain a digit-->
+            <input type="text" onclick="return checkit();" placeholder="your name" size="19" name="question">
             Email:
-            <input type="email" placeholder="grader@idc.com" name="Contact-Email">
+            <!--next input is an email, must be filled in and not contain more then one @ sign or be missing it-->
+            <input type="email" placeholder="grader@idc.com" name="Email">
             Feedback on my hw6 website:
-            <textarea name="Contact-Message" placeholder="write message here" rows="7″ cols="18″>
+            <!--contact message may not contain any uppercase letters-->
+            <textarea name="Message" placeholder="write message here" rows="7″ cols="18″>
             </textarea>
-            <button type="submit" onclick="return IsEmpty();" value="Submit">Send</button>
+            <button id="insert" type="submit" onclick="return checkit();" value="Submit">Send</button>
             </form>  
             <form action="/play">
+               <!--extra assignment and call me buttons alerts--> 
             <input onclick='onPressed()' type=button name="mybutton" value="Give this assignment 100%">
             </form></p>
             <p>Email: liatshear@gmail.com
@@ -40,10 +47,7 @@
                     <input onclick='onCall()' type=button name="mybutton" value="Call now">
                 </form>
             </p>
-              <form name="frm">
-                Any extra questions:<input name="question"/><br/>
-            <input id="insert" onclick="return IsEmpty();" type="submit" value="Add Question" />
-         </form>
+          
         </div>
      
         </body>
